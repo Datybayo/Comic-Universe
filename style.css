@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+body{
+    overflow-x: hidden;
+    /* overflow-y: hidden; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    height: 15vh;
+}
+
+.logo{
+    z-index: 10;
+    margin-left: 15px;
+     
+}
+.logo img{
+    height: 13vh;
+    width: 15vw;
+}
+.logo:hover{
+    transform:translateX(30)
+}
+ul {
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+}
+
+ li{
+    position: relative;
+    margin-top: 26px;
+    margin-left: 40px;
+    color:#fff;
+    list-style: none;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    padding: 15px;
+    transition: 0.2s ease-in;
+}
+li:hover{
+    text-decoration: underline white;
+    color: red;
+    transition: 0.3s ease-in-out;
+}
+.one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('wallpaperflare.com_wallpaper\ \(3\).jpg');
+    background-repeat: no-repeat;
+    opacity: 0.95;
+    background-size:cover;
+    width: 100vw;
+    height: 80vh;
+}
+.descrip{
+    position: relative;
+    color: white;
+    font-style: bold;
+    font-size: 20px;
+    transition: 0.2s ease-in;
+
+}
+.descrip:hover{
+    /* text-decoration: underline black; */
+    color: rgb(7, 7, 7);
+    transition: 0.3s ease-in-out;
+
+}
+
+.one input{
+    background-color: #080909;
+    height: 12%;
+    width: 40%;
+    border-radius: 50px;
+    text-align: center;    
+    font-size: 1.3rem;
+    color: white;
+    margin-top: 15px;
+
+}
+input::placeholder{
+    color: white;
+}
+input:hover{
+    border: 2px solid white;
+}
+.two{
+    /* background-image: url('33.jpg');
+    background-repeat: no-repeat;
+    background-size: contain; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color:  black;
+    height: 70%;
+    width: 100%;
+    margin: auto;
+    
+}
+.head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+ 
+h2{
+   color: white; 
+   margin-top: 5px;
+   padding: 10px;
+   background: white;
+   color: black;
+   border-radius: 50px;
+   border: none;
+   transition: 0.3s ease-in;
+}
+h2:hover{
+    transition: 0.3s ease-in-out;
+    background-color: rgb(34, 204, 204);
+}
+.box{
+    /* position: absolute; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin-top: 20px;
+    height:350px;
+    width: 230px;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 10;
+    border: 2px solid white;
+    border: none;
+    transition: 0.3s ease-out;
+    /* border-radius: 100px; */
+}
+.box:hover{
+    transform: scale(0.9);
+    box-shadow: 0 0 10px rgba(0, 0,0,0.2);
+}
+.box1{
+    background-image: url('Naruto.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: white;
+}
+.box2{
+    background-image: url('Boruto.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.box3{
+    background-image: url('Bleach.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+}
+
+.box4{
+    background-image: url('AOT.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.box5{
+    background-image: url('Onepiece.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 22px;
+}
+.box6{
+    background-image: url('Solo leveling.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.box7{
+    background-image: url('Demon slayer.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.box8{
+    background-image: url('Jujutsu kaisen.jpeg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.footer{
+    background-color: #770000;
+    height: 40vh;
+    width: 100%;
+}
+.last-part{
+    color: white;
+    z-index: 10;
+    margin-top: 20px;  
+}
+ h3{
+    background-color: gray;
+    width: 80%;
+    text-align: center;
+    margin:auto;
+    padding: 15px;
+    height: 30px;
+    
+}
+@media only screen and (max-width: 500px){
+     
+    .descrip{
+           font-size: 12px;
+           font-weight: 400;
+     }
+     
+
+ }
+@media only screen and (max-width: 1050px){
+    nav{
+        background-color: rgb(144, 42, 144);
+    }
+    ul{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    ul li{
+        margin-left: 5px;
+        /* margin: auto; */
+        padding: auto;
+        color: white;
+    
+    }
+     li:hover{
+        text-decoration: none;
+        background-color: aliceblue;
+        color: black;
+        border: none;
+        border-radius: 25px;
+    }
+
+.logo{
+    visibility: hidden;
+}
+.one{
+    scroll-behavior: none;
+    overflow: hidden;
+    background-image: none;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+.descrip{
+    position: relative;
+    font-size: 1em;
+    font-weight: bold;
+    color: black;
+    line-height: 1.5;
+    /* font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+ 
+.one input{
+    background-color: purple;
+    height: 10%;
+    width: 80%;
+    border-radius: 50px;
+    text-align: center;    
+    font-size: 1em;
+    color: white;
+    margin-top: 15px;
+    border: none;
+}
+input::placeholder{
+    color: white;
+    font-style: bold;
+    font-size: 15px;
+}
+input:hover{
+    border: 2px solid black;
+} 
+
+ 
+
+
